@@ -48,8 +48,9 @@ const { createNFT, getAllNFTs } = require("./controllers/nftController.js");
 const { createListing } = require("./controllers/listingController.js");
 
 // Load environment variables from .env file
-dotenv.config();
-
+dotenv.config({
+  path: '../.env'
+});
 const server = express();
 const router = express.Router();
 

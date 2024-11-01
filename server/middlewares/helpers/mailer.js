@@ -17,7 +17,7 @@ exports.sendEmail = async () => {
     const cart_mail = fs.readFileSync(path.join(__dirname, mail), {
       encoding: "utf-8",
     });
-    eval(cart_background);
+
     const mailContent = `<!DOCTYPE html>
                     <html>
                         <body>
